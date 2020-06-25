@@ -1,13 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import { Container } from './style';
+import { Container } from "./style";
 
 export default function Header() {
   return (
     <Container>
-      <h1>
-        Pipefy Cover
-      </h1>
+      <h1>Scrum Board</h1>
     </Container>
   );
 }

@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: #387D7A;
+  background-color: #3941fa;
   padding: 0 30px;
   height: 80px;
-  box-shadow: 0 2px 2px 0 #395E66;
-  
+  box-shadow: 0 2px 2px 0 #0003;
+
   display: flex;
   align-items: center;
 
