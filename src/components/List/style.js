@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -9,14 +9,13 @@ export const Container = styled.div`
   height: 100%;
   padding: 0 15px;
   & + div {
-    border-left: 1px solid rgba(0,0,0,0.05);
+    border-left: 1px solid rgba(0, 0, 0, 0.05);
   }
 `;
 
 export const Header = styled.div`
   width: 100%;
-  height: 30px;
-  
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -27,7 +26,7 @@ export const Header = styled.div`
   span {
     width: 30px;
     height: 30px;
-    background: #387D7A;
+    background: #387d7a;
     border-radius: 15px;
     display: flex;
     justify-content: center;
