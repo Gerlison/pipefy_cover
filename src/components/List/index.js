@@ -8,7 +8,7 @@ export default function List({ column }) {
   return (
     <Droppable droppableId={column.id}>
       {(provided) => (
-        <Container div ref={provided.innerRef} {...provided.droppableProps}>
+        <Container ref={provided.innerRef} {...provided.droppableProps}>
           <Header>
             <h2>{column.title}</h2>
           </Header>

@@ -1,16 +1,17 @@
-import React from "react";
+import React, { memo } from "react";
 import { Draggable } from "react-beautiful-dnd";
 
 import { Container, Header, Status, Content, Autor } from "./style";
 
-export default function Card({ card, index }) {
+export default memo(function Card({ card, index }) {
   return (
     <Draggable draggableId={card.id} index={index}>
-      {(provided) => (
+      {(provided, snapshot) => (
         <Container
           ref={provided.innerRef}
           {...provided.draggableProps}
           {...provided.dragHandleProps}
+          isDragging={snapshot.isDragging && !snapshot.isDropAnimating}
         >
           <Header>
             {card.labels.map((label) => (
@@ -25,4 +26,4 @@ export default function Card({ card, index }) {
       )}
     </Draggable>
   );
-}
+});

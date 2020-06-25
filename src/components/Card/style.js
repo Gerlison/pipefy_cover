@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
   background: #fff;
   border-radius: 3px;
-  box-shadow: 0px 2px 2px 0 #0002;
+  box-shadow: 0px 2px ${({ isDragging }) => (isDragging ? "15px" : "2px")} 0
+    #0002;
   margin-bottom: 15px;
   cursor: grab;
 `;
